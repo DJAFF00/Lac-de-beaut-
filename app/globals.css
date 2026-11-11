@@ -527,10 +527,11 @@ html.lenis body {
 .hero__title {
   position: relative;
   font-family: var(--ff-display);
-  font-weight: 800;
-  font-size: clamp(3.6rem, 19vw, 7rem);
-  line-height: 0.92;
-  letter-spacing: -0.035em;
+  font-weight: 700;
+  font-size: clamp(2.8rem, 14.5vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
 }
 
 .hero__line {
@@ -574,6 +575,12 @@ html.lenis body {
 
 .badge {
   display: none;
+}
+
+@media (min-width: 1200px) {
+  .badge {
+    display: block;
+  }
 }
 
 /* Scène : photo + éléments flottants */
@@ -764,7 +771,7 @@ html.lenis body {
   }
 
   .hero__title {
-    font-size: min(8.6vw, 8.6rem);
+    font-size: min(6vw, 6.4rem);
   }
 
   .hero__line {
@@ -775,10 +782,10 @@ html.lenis body {
   }
 
   .hero__spark {
-    top: -6px;
-    right: -42px;
-    width: 38px;
-    height: 38px;
+    top: -4px;
+    right: -34px;
+    width: 30px;
+    height: 30px;
   }
 
   .hero__sub {
@@ -787,9 +794,8 @@ html.lenis body {
 
   .badge {
     position: absolute;
-    display: block;
     top: -34px;
-    left: calc(100% + 56px);
+    left: calc(100% + 64px);
     width: 128px;
     height: 128px;
   }
@@ -1685,8 +1691,8 @@ html.lenis body {
   display: inline-block;
   padding-bottom: 0.06em;
   font-family: var(--ff-display);
-  font-weight: 800;
-  font-size: 12.2vw;
+  font-weight: 700;
+  font-size: 7.6vw;
   letter-spacing: -0.04em;
   white-space: nowrap;
   color: var(--ink-2);
